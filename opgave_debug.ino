@@ -1,4 +1,4 @@
-#include "Tune.h";
+#include "encrypt.h";
 
 /* ----------------------------------------------------------------------------------------------
  * -------------------------- Denne del skal ikke debugges --------------------------------------
@@ -101,7 +101,8 @@ void loop() {
 
 // Vi venter som sagt med det her!
 
-    if (data == "FUN") {
+
+if(strcmp(data.c_str(), rot13(str)) == 0){
       //Play first section
       int foo = 0;
 
