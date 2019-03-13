@@ -58,7 +58,6 @@ void loop() {
       // Indsæt kommentar
     data += (char)numbers;
 
-        // Indsæt kommentar
     if (data == "CASE_1") {
         // Indsæt kommentar
       digitalWrite(pin2, LOW);
@@ -68,7 +67,6 @@ void loop() {
       delay(1000);
     }
 
-        // Indsæt kommentar
     if (data == "CASE_2") {
       
         // Indsæt kommentar
@@ -80,7 +78,6 @@ void loop() {
 
     }
 
-        // Indsæt kommentar
     if (data == "CASE_3") {
 
         // Indsæt kommentar
@@ -88,7 +85,6 @@ void loop() {
       delay(100);
     }
 
-        // Indsæt kommentar
     if (data == "CASE_4") {
       
         // Indsæt kommentar
