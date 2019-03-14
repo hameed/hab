@@ -56,7 +56,7 @@ void loop() {
     numbers = Serial.read();
     Serial.println(numbers);
 
-    // Illustrere pointe
+    // Blot for at illustrere en pointe
     delay(3000);
 
     // vedhæfter char i enden på allerede opsamlet string
