@@ -48,23 +48,23 @@ int numbers = 0;
 String data;
 
 void loop() {
-  
+
   // Tjek om buffer indeholder noget, der skal indlæses
   while (Serial.available()) {
 
     // Indlæser 1 chars talværdi ad gangen i bytes
     numbers = Serial.read();
     Serial.println(numbers);
-    
+
     // Illustrere pointe
     delay(3000);
-    
+
     // vedhæfter char i enden på allerede opsamlet string
     data += (char)numbers;
     Serial.println(data);
 
     if (data == "CASE_1") {
-      
+
       // slukker pin2 (som er pin 5)
       digitalWrite(pin2, LOW);
 
@@ -75,7 +75,7 @@ void loop() {
 
     if (data == "CASE_2") {
       Serial.println("HEJ CASE 2");
-      
+
       // tænder pin2 (som er pin 5)
       digitalWrite(pin2, HIGH);
 
@@ -108,7 +108,9 @@ void loop() {
 
     // Vi venter som sagt med det her!
 
-
+    /*
+        rot13(str) er blot "hej med dig" krypteret med Cæsar chiffer, hvor ASCII-værdierne er rykket 13
+        pladser som defineret i encrypt.h, som bliver inkluderet i toppen af denne fil med #include encrypt.h */
     if (strcmp(data.c_str(), rot13(str)) == 0) {
       //Play first section
       int foo = 0;
