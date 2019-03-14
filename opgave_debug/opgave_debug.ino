@@ -1,8 +1,8 @@
 #include "encrypt.h";
 
 /* ----------------------------------------------------------------------------------------------
- * -------------------------- Denne del skal ikke debugges --------------------------------------
- * ---------------------------------------------------------------------------------------------- */
+   -------------------------- Denne del skal ikke debugges --------------------------------------
+   ---------------------------------------------------------------------------------------------- */
 const int c = 261;
 const int d = 294;
 const int e = 329;
@@ -24,7 +24,7 @@ const int gSH = 830;
 const int aH = 880;
 
 /* ----------------------------------------------------------------------------------------------
- *  -------------------------------- DEBUG BEGIN ------------------------------------------------
+    -------------------------------- DEBUG BEGIN ------------------------------------------------
     --------------------------------------------------------------------------------------------- */
 
 int pin1 = 3;
@@ -43,66 +43,73 @@ void setup() {
   pinMode(pin2, OUTPUT);
 
 }
-  // Indsæt kommentar
+// Indsæt kommentar
 int numbers = 0;
 String data;
 
 void loop() {
-    // Indsæt kommentar
+  
+  // Tjek om buffer indeholder noget, der skal indlæses
   while (Serial.available()) {
 
-  // Indsæt kommentar
+    // Indlæser 1 chars talværdi ad gangen i bytes
     numbers = Serial.read();
-      // Indsæt kommentar
+    Serial.println(numbers);
+    
+    // Illustrere pointe
     delay(3000);
-      // Indsæt kommentar
+    
+    // vedhæfter char i enden på allerede opsamlet string
     data += (char)numbers;
+    Serial.println(data);
 
     if (data == "CASE_1") {
-        // Indsæt kommentar
-      digitalWrite(pin2, LOW);
       
-        // Indsæt kommentar
-      noTone(5);     
+      // slukker pin2 (som er pin 5)
+      digitalWrite(pin2, LOW);
+
+      // slukker for buzzer på pin 5
+      noTone(5);
       delay(1000);
     }
 
     if (data == "CASE_2") {
+      Serial.println("HEJ CASE 2");
       
-        // Indsæt kommentar
+      // tænder pin2 (som er pin 5)
       digitalWrite(pin2, HIGH);
 
-        // Indsæt kommentar
-      tone(pin2, 500); 
+      // tænder buzzeren med angivet frekvens
+      tone(pin2, 500);
       delay(1000);
 
     }
 
     if (data == "CASE_3") {
 
-        // Indsæt kommentar
+      // tænder pin1 som er pin 3 (LED)
       digitalWrite(pin1, HIGH);
       delay(100);
     }
 
     if (data == "CASE_4") {
-      
-        // Indsæt kommentar
+
+      // slukker pin1 som er pin 3 (LED)
       digitalWrite(pin1, LOW);
       delay(100);
     }
-    
-/* ---------------------------------------------------------------------------------------------
- * ---------------------------------------------------------------------------------------------
- * ----------------------------- DEBUG IKKE RESTEN! -------------------------------------------
- * -----------------------------------------------------------------------------------------------
- * ----------------------------------------------------------------------------------------------*/
+
+    /* ---------------------------------------------------------------------------------------------
+       ---------------------------------------------------------------------------------------------
+       ----------------------------- DEBUG IKKE RESTEN! -------------------------------------------
+       -----------------------------------------------------------------------------------------------
+       ----------------------------------------------------------------------------------------------*/
 
 
-// Vi venter som sagt med det her!
+    // Vi venter som sagt med det her!
 
 
-if(strcmp(data.c_str(), rot13(str)) == 0){
+    if (strcmp(data.c_str(), rot13(str)) == 0) {
       //Play first section
       int foo = 0;
 
