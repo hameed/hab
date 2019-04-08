@@ -7,4 +7,4 @@
 
 4) Lav et script, der insisterer på at modtage et navn som input, der forefindes på en godkendt liste. Den godkendte liste indeholder navnene på holdet, der er mødt i dag. Scriptet returnerer indeks i array'et. Resultatet printes ud i terminalen.
 
-5) Lav et script, der sender en notifikation i form af en e-mail, hvis antallet af filer i pwd er større end 10.}
+5) Lav et script, der sender en notifikation i form af en e-mail, hvis antallet af filer i pwd er større end 10.
