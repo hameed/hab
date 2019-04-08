@@ -1,3 +1,4 @@
+Nogle af opgaverne kræver søgning på internettet for at løse dem:
 
 1) Lav et script, der tager 2 argumenter i form af tal og ganger dem med hinanden. Resultatet printes ud i terminalen.
 
