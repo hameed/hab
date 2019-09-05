@@ -1,0 +1,4 @@
+1) Opret en mappe med navnet "Playground" under mappen "Dokumenter"
+2) Opret 3 mapper fx "a", "b" og "c" i mappen "Playground"
+3) Opret nu 4 mapper i mapperne "a", "b" og "c" fx "aa", "bb", "cc" og "dd"
+4) Opret en fil med navnet my_text_file.txt i undermappen "dd" til mappen "a"
