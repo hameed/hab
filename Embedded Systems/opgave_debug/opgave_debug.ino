@@ -27,8 +27,8 @@ const int aH = 880;
     -------------------------------- DEBUG BEGIN ------------------------------------------------
     --------------------------------------------------------------------------------------------- */
 
-int pin1 = 3;
-int pin2 = 5;
+int ledPin1 = 3;
+int ledPin2 = 5;
 int buzz = 8;
 
 int counter = 0;
@@ -39,64 +39,43 @@ void setup() {
 
   // Indsæt kommentar
   pinMode(buzz, OUTPUT);
-  pinMode(pin1, OUTPUT);
-  pinMode(pin2, OUTPUT);
-
+  pinMode(ledPin1, OUTPUT);
+  pinMode(ledPin2, OUTPUT);
 }
+
 // Indsæt kommentar
 int numbers = 0;
 String data;
 
 void loop() {
 
-  // Tjek om buffer indeholder noget, der skal indlæses
-  while (Serial.available()) {
-
-    // Indlæser 1 chars talværdi ad gangen i bytes
+  while (Serial.available()) {   
     numbers = Serial.read();
-    Serial.println(numbers);
-
-    // Blot for at illustrere en pointe
-    delay(3000);
-
-    // vedhæfter char i enden på allerede opsamlet string
+    delay(100);
+   
     data += (char)numbers;
     Serial.println(data);
 
     if (data == "CASE_1") {
-
-      // slukker pin2 (som er pin 5)
-      digitalWrite(pin2, LOW);
-
-      // slukker for buzzer på pin 5
+      digitalWrite(ledPin2, LOW);
       noTone(5);
       delay(1000);
     }
 
     if (data == "CASE_2") {
-      Serial.println("HEJ CASE 2");
-
-      // tænder pin2 (som er pin 5)
-      digitalWrite(pin2, HIGH);
-
-      // tænder buzzeren med angivet frekvens
-      tone(pin2, 500);
+      //digitalWrite(ledPin2, HIGH);
+      tone(ledPin2, 0);
       delay(1000);
-
     }
 
     if (data == "CASE_3") {
-
-      // tænder pin1 som er pin 3 (LED)
-      digitalWrite(pin1, HIGH);
-      delay(100);
+      digitalWrite(ledPin1, HIGH);
+      delay(1000);
     }
 
     if (data == "CASE_4") {
-
-      // slukker pin1 som er pin 3 (LED)
-      digitalWrite(pin1, LOW);
-      delay(100);
+      digitalWrite(ledPin1, LOW);
+      delay(1000);
     }
 
     /* ---------------------------------------------------------------------------------------------
@@ -105,19 +84,14 @@ void loop() {
        -----------------------------------------------------------------------------------------------
        ----------------------------------------------------------------------------------------------*/
 
-
-    // Vi venter som sagt med det her!
-
-    /*
-        rot13(str) er blot "hej med dig" krypteret med Cæsar chiffer, hvor ASCII-værdierne er rykket 13
-        pladser som defineret i encrypt.h, som bliver inkluderet i toppen af denne fil med #include encrypt.h */
+   
     if (strcmp(data.c_str(), rot13(str)) == 0) {
       //Play first section
-      int foo = 0;
+      int count = 0;
 
-      while (foo < pin2) {
-        foo ++;
-        Serial.println(foo);
+      while (count < ledPin2) {
+        count ++;
+
         firstSection();
 
         //Play second section
@@ -155,35 +129,28 @@ void loop() {
   data = "";
 }
 
-void beep(int note, int duration)
-{
+void beep(int note, int duration){
 
   tone(buzz, note, duration);
 
 
-  if (counter % 2 == 0)
-  {
-    digitalWrite(pin1, HIGH);
+  if (counter % 2 == 0){
+    digitalWrite(ledPin1, HIGH);
     delay(duration);
-    digitalWrite(pin1, LOW);
-  } else
-  {
-    digitalWrite(pin2, HIGH);
+    digitalWrite(ledPin1, LOW);
+  } 
+  else{
+    digitalWrite(ledPin2, HIGH);
     delay(duration);
-    digitalWrite(pin2, LOW);
+    digitalWrite(ledPin2, LOW);
   }
 
-
   noTone(buzz);
-
   delay(50);
-
-
   counter++;
 }
 
-void firstSection()
-{
+void firstSection(){
   beep(a, 500);
   beep(a, 500);
   beep(a, 500);
@@ -209,8 +176,7 @@ void firstSection()
   delay(500);
 }
 
-void secondSection()
-{
+void secondSection(){
   beep(aH, 500);
   beep(a, 300);
   beep(a, 150);
