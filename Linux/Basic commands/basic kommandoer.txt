@@ -1,6 +1,6 @@
 1) Opret en mappe med navnet "Playground" under mappen "Dokumenter"
 2) Opret 3 mapper fx "a", "b" og "c" i mappen "Playground"
-3) Opret nu 4 mapper i mapperne "a", "b" og "c" fx "aa", "bb", "cc" og "dd" med navnene "bin", "usr", "root" og "sys"
+3) Opret nu 4 mapper i mapperne "a", "b" og "c" fx "aa", "bb", "cc" og "dd" med undermapperne "bin", "usr", "root" og "sys"
 4) Opret en tom fil med navnet "my_text_file.txt" i undermappen "dd" til mappen "a", og opret en fil med navnet "notes.txt" i undermappen "cc" til mappen "b" - filen "notes.txt" skal bruges til at tage notater, mens du kører resten af punkterne igennem.
 5) Noter meta-data for filen "my_text_file.txt"
 6) Indtast kommandoen cd /
