@@ -7,7 +7,7 @@
 7) Opret nu tekstfiler i de forskellige undermapper til mappen "Playground"
 8) Indtast kommandoen cd ~
 9) Indtast kommandoen touch my_text_file.txt
-10) Åbn filen "my_text_file.txt" med en editor (nano, red osv.), skriv "hej med dig", gem og luk editoren. Noter meta-data for filen "my_text_file.txt"
+10) Åbn filen "my_text_file.txt" med en editor (nano, xed, vi osv.), skriv "hej med dig", gem og luk editoren. Noter meta-data for filen "my_text_file.txt"
 11) Indtast kommandoen cd /
 12) Gem en PDF-fil i mappen "a/bb/bin" - brug evt. wget og hiv en dummy-fil ned fra internettet. Blev du nægtet adgang?
 13) Kør kommandoen cat på "my_text_file.txt" i undermappen "dd" til mappen "a" - Hvad indeholder filen?
