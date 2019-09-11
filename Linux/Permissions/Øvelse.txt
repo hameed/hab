@@ -1,0 +1,20 @@
+1. Opret en tekst-fil "noter.txt" og skriv lidt vilkårlig tekst i den.
+2. Opret 2 brugere; A og B (bestem selv nogle for- og efternavne)
+3. Opret en gruppe guests.
+4. Tilføj brugerne A og B til gruppen "guests"
+5. Giv A rettigheder til at læse filen.
+6. Giv B rettigheder til at læse og skrive i filen.
+7. Giv dig selv alle rettigheder mht. filen.
+8. Log ind som de to andre brugere og tjek om, de kan redigere filen.
+9. Kan de kopiere filen til deres hjemmemappe?
+10. Hvad kan de gøre ved filen, efter de har kopieret den? (Hvis de får lov).
+11. Log ind som din egen bruger igen og hent filen hello.sh fra min github (den ligger under mappen Permissions).
+12. Afprøv kommandoen ./hello.sh - hvad sker der? 
+13. Indtast chmod 744 hello.sh - Forklar hvad kommandoen gør.
+14. Afprøv ./hello.sh igen.
+15. Afprøv ./hello.sh som brugerne A og B.
+16. Kan brugerne A og B læse filen "hello.sh"?
+16. Giv gruppen "guests" rettigheder til at eksekvere filen hello.sh - afprøv om det virker.
+17. Hvad skal der til, før A og B kan eksekvere filen? 
+
+(hint: Slå evt. setfacl -m op i manpages og/eller evt. på nettet)
