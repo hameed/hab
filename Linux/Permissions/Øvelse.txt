@@ -17,4 +17,3 @@
 16. Giv gruppen "guests" rettigheder til at eksekvere filen hello.sh - afprøv om det virker.
 17. Hvad skal der til, før A og B kan eksekvere filen? 
 
-(hint: Slå evt. setfacl -m op i manpages og/eller evt. på nettet)
