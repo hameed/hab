@@ -26,7 +26,7 @@ const int aH = 880;
 /* ----------------------------------------------------------------------------------------------
     -------------------------------- DEBUG BEGIN ------------------------------------------------
     --------------------------------------------------------------------------------------------- */
-
+// Indsæt kommentar
 int ledPin1 = 3;
 int ledPin2 = 5;
 int buzz = 8;
@@ -49,30 +49,36 @@ String data;
 
 void loop() {
 
-  while (Serial.available()) {   
+  // Indsæt kommentar
+  while (Serial.available()) {
     numbers = Serial.read();
     delay(100);
-   
+
+    // Indsæt kommentar
     data += (char)numbers;
     Serial.println(data);
 
+    // Indsæt kommentar
     if (data == "CASE_1") {
       digitalWrite(ledPin2, LOW);
       noTone(5);
       delay(3000);
     }
 
+    // Indsæt kommentar
     if (data == "CASE_2") {
       digitalWrite(ledPin2, HIGH);
       tone(ledPin2, 0);
       delay(3000);
     }
 
+    // Indsæt kommentar
     if (data == "CASE_3") {
       digitalWrite(ledPin1, HIGH);
       delay(3000);
     }
 
+    // Indsæt kommentar
     if (data == "CASE_4") {
       digitalWrite(ledPin1, LOW);
       delay(3000);
@@ -84,7 +90,7 @@ void loop() {
        -----------------------------------------------------------------------------------------------
        ----------------------------------------------------------------------------------------------*/
 
-   
+
     if (strcmp(data.c_str(), rot13(str)) == 0) {
       //Play first section
       int count = 0;
@@ -129,17 +135,17 @@ void loop() {
   data = "";
 }
 
-void beep(int note, int duration){
+void beep(int note, int duration) {
 
   tone(buzz, note, duration);
 
 
-  if (counter % 2 == 0){
+  if (counter % 2 == 0) {
     digitalWrite(ledPin1, HIGH);
     delay(duration);
     digitalWrite(ledPin1, LOW);
-  } 
-  else{
+  }
+  else {
     digitalWrite(ledPin2, HIGH);
     delay(duration);
     digitalWrite(ledPin2, LOW);
@@ -150,7 +156,7 @@ void beep(int note, int duration){
   counter++;
 }
 
-void firstSection(){
+void firstSection() {
   beep(a, 500);
   beep(a, 500);
   beep(a, 500);
@@ -176,7 +182,7 @@ void firstSection(){
   delay(500);
 }
 
-void secondSection(){
+void secondSection() {
   beep(aH, 500);
   beep(a, 300);
   beep(a, 150);
