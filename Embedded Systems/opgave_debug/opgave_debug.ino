@@ -52,11 +52,13 @@ void loop() {
   // Indsæt kommentar
   while (Serial.available()) {
     numbers = Serial.read();
-    delay(100);
+    delay(3000);
 
     // Indsæt kommentar
     data += (char)numbers;
-    Serial.println(data);
+    
+    // Ændr dette kald til noget, der giver mening
+    Serial.println("MODIFY THIS!");
 
     // Indsæt kommentar
     if (data == "CASE_1") {
