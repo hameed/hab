@@ -59,23 +59,23 @@ void loop() {
     if (data == "CASE_1") {
       digitalWrite(ledPin2, LOW);
       noTone(5);
-      delay(1000);
+      delay(3000);
     }
 
     if (data == "CASE_2") {
-      //digitalWrite(ledPin2, HIGH);
+      digitalWrite(ledPin2, HIGH);
       tone(ledPin2, 0);
-      delay(1000);
+      delay(3000);
     }
 
     if (data == "CASE_3") {
       digitalWrite(ledPin1, HIGH);
-      delay(1000);
+      delay(3000);
     }
 
     if (data == "CASE_4") {
       digitalWrite(ledPin1, LOW);
-      delay(1000);
+      delay(3000);
     }
 
     /* ---------------------------------------------------------------------------------------------
