@@ -58,7 +58,7 @@ void loop() {
     data += (char)numbers;
     
     // Ændr dette kald til noget, der giver mening
-    Serial.println("MODIFY THIS!");
+    Serial.println(data);
 
     // Indsæt kommentar
     if (data == "CASE_1") {

@@ -4,7 +4,7 @@ Mere sjov med Shell:
  Hvor a angiver antallet af undermapper i hvert niveau, og b angiver antal
 niveauer.
 
-Kommandoen bash my_tree 3 2 opretter 3 mapper med 3 undermapper i hver.
+Kommandoen bash my_tree.sh 3 2 opretter 3 mapper med 2 undermapper i hver.
 
 Man kan også lave scriptet, sådan så det beder om de to argumenter
 efter man har kørt bash my_tree.sh 
