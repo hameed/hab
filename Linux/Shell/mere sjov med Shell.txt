@@ -1,7 +1,7 @@
 Mere sjov med Shell:
 
 1) Skriv et script (fx my_tree.sh), der tager 2 argumenter, a og b, og opretter et mappehieraki
- Hvor a  angiver antal niveauer, og b angiver antallet af undermapper i hvert niveau.
+ Hvor a angiver antal niveauer, og b angiver antallet af undermapper i hvert niveau.
 
 Kommandoen bash my_tree.sh 3 2 opretter 3 mapper med 2 undermapper i hver.
 
