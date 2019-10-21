@@ -1,5 +1,4 @@
 #include "encrypt.h";
-
 /* ----------------------------------------------------------------------------------------------
    -------------------------- Denne del skal ikke debugges --------------------------------------
    ---------------------------------------------------------------------------------------------- */
@@ -52,13 +51,13 @@ void loop() {
   // Indsæt kommentar
   while (Serial.available()) {
     numbers = Serial.read();
-    delay(3000);
+    delay(500);
 
     // Indsæt kommentar
     data += (char)numbers;
-    
+
     // Ændr dette kald til noget, der giver mening
-    Serial.println(data);
+  //  Serial.println(data);
 
     // Indsæt kommentar
     if (data == "CASE_1") {

@@ -20,6 +20,8 @@ fx nano foo.txt
 
 3) sæt cron til at køre scripts hvert 5. minut der:
 
-A) Rykker en fil der indeholder flere end 10 linjer til mappen done 
-B) Kopierer en fil, som indeholder et bestemt ord efter eget valg og indsætter kopien i mappen done.
-C) Sletter en fil, som indeholder navne, du selv vælger. Efter sletning skal (1) tidspunkt, (2) filnavn og (deleted) logges i log-filen i mappen log.
+A) Rykker en fil der indeholder flere end 10 linjer fra mappen test_cron til mappen done 
+B) Kopierer en fil, som indeholder et bestemt ord (efter jeres eget valg) og indsætter kopien i mappen done.
+C) Sletter en fil, som indeholder navne, du selv vælger. Efter sletning skal (1) tidspunkt, (2) filnavn og "(deleted)" logges i log-filen i mappen log.
+
+NB: Hvis I ikke kan få tidspunkt til at virke, så stryg det.
