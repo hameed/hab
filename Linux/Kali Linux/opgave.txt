@@ -1,0 +1,5 @@
+1) Log på mit hotspot "Hameed" password: trymeforlinux
+2) Lav et rlogin ind på min metasploitable maskine på ip'en 172.20.10.4
+3) find filen med opgaven på systemet og følg instrukserne i den
+
+NB: Der kan maks være 5 logget på mit hotspot ad gangen.
