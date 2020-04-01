@@ -1,14 +1,6 @@
 Mere sjov med Shell:
 
-1) Skriv et script (fx my_tree.sh), der tager 2 argumenter, a og b, og opretter et mappehieraki
- Hvor a angiver antal niveauer, og b angiver antallet af undermapper i hvert niveau.
-
-Kommandoen bash my_tree.sh 3 2 opretter 3 mapper med 2 undermapper i hver.
-
-Man kan også lave scriptet, sådan så det beder om de to argumenter
-efter man har kørt bash my_tree.sh 
-
-2) Opret to filer, fx foo.txt og bar.txt. skriv følgende ind i foo.txt:
+1) Opret to filer, fx foo.txt og bar.txt. skriv følgende ind i foo.txt:
 
 123
 456
@@ -28,7 +20,7 @@ Find kommandoen (brug internettet), der kørt på foo.txt og bar.txt, efterlader
 654
 321
 
-3) Skriv et script, som ved brug af foo.txt efterlader bar.txt med følgende indhold:
+2) Skriv et script, som ved brug af foo.txt efterlader bar.txt med følgende indhold:
 
 123
 456
@@ -37,9 +29,9 @@ Find kommandoen (brug internettet), der kørt på foo.txt og bar.txt, efterlader
 654
 321
 
-4) Skriv et script, som flytter filen bar.txt efter at have omdøbt den til log.txt til det nederste niveau i hierakiet fra opgave 1, hvis filen indeholder mere end 10 linjer.
+3) Skriv et script, som flytter filen bar.txt efter at have omdøbt den til log.txt til det nederste niveau i hierakiet fra opgave 1, hvis filen indeholder mere end 10 linjer.
 
-5) Kør kommandoen cat foo.txt > bar.txt og tilføj 2 linjers tekst nederst i dokumentet. Fx
+4) Kør kommandoen cat foo.txt > bar.txt og tilføj 2 linjers tekst nederst i dokumentet. Fx
 
 123
 456
@@ -57,3 +49,14 @@ Og filen log.txt indeholder følgende:
 
 Min linje 1
 Min linje 2
+
+---
+IKKE obligatorisk
+
+5) Skriv et script (fx my_tree.sh), der tager 2 argumenter, a og b, og opretter et mappehieraki
+ Hvor a angiver antal niveauer, og b angiver antallet af undermapper i hvert niveau.
+
+Kommandoen bash my_tree.sh 3 2 opretter 3 mapper med 2 undermapper i hver.
+
+Man kan også lave scriptet, sådan så det beder om de to argumenter
+efter man har kørt bash my_tree.sh 
