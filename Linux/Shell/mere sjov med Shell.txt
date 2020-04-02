@@ -29,7 +29,7 @@ Find kommandoen (brug internettet), der kørt på foo.txt og bar.txt, efterlader
 654
 321
 
-3) Skriv et script, som flytter filen bar.txt efter at have omdøbt den til log.txt til det nederste niveau i hierakiet fra opgave 1, hvis filen indeholder mere end 10 linjer.
+3) Skriv et script, som flytter filen bar.txt efter at have omdøbt den til log.txt til det nederste niveau i et hieraki, som består af 3 mapper med 3 undermapper i hver, hvis filen indeholder mere end 10 linjer.
 
 4) Kør kommandoen cat foo.txt > bar.txt og tilføj 2 linjers tekst nederst i dokumentet. Fx
 
