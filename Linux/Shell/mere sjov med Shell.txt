@@ -1,4 +1,4 @@
-Mere sjov med Shell:
+Obligatoriske opgaver (1-4):
 
 1) Opret to filer, fx foo.txt og bar.txt. skriv følgende ind i foo.txt:
 
