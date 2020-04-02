@@ -1,3 +1,12 @@
+Følgende opgaver skal afleveres i Fronter senest fredag d. 10/4-2020 kl. 22:00. Aflevering skal ske i grupper bestående af 2-3 gruppemedlemmer - I står selv for gruppedannelser.
+
+Der skal afleveres en zip-fil med scripts og andre nødvendige filer for besvarelsen. Udgangspunktet er, at jeg kan hente zipfilen ned, unzippe den og køre de forskellige scripts og få de rigtige resultater.
+
+I kan dog vedlægge en tekst-fil, som forklarer, hvordan absolutte stier skal sættes op i de forskellige scripts for at virke korrekt.
+
+Der er 5 opgaver, hvoraf opgave 1-4 er obligatoriske, mens opgave 5 er en bonusopgave. 
+--------------------------------------------------------------------------------------
+
 Obligatoriske opgaver (1-4):
 
 1) Opret to filer, fx foo.txt og bar.txt. skriv følgende ind i foo.txt:
@@ -50,7 +59,7 @@ Og filen log.txt indeholder følgende:
 Min linje 1
 Min linje 2
 
----
+------------------
 IKKE obligatorisk
 
 5) Skriv et script (fx my_tree.sh), der tager 2 argumenter, a og b, og opretter et mappehieraki
