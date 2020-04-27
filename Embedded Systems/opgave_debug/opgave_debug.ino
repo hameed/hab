@@ -28,7 +28,7 @@ const int aH = 880;
 // Indsæt kommentar
 int ledPin1 = 3;
 int ledPin2 = 5;
-int buzz = 8;
+int buzz = 8; // Hvis I kun har én buzzer, så sørg for at sætte den på i henhold til denne linje.
 
 int counter = 0;
 
@@ -56,8 +56,8 @@ void loop() {
     // Indsæt kommentar
     data += (char)numbers;
 
-    // Ændr dette kald til noget, der giver mening
-  //  Serial.println(data);
+    // Ændr dette kald til noget, der giver mening i forhold til at debugge programmet.
+    Serial.println("Edit This Line");
 
     // Indsæt kommentar
     if (data == "CASE_1") {
