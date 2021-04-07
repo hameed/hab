@@ -1,8 +1,8 @@
-Følgende opgaver skal afleveres i Fronter senest fredag d. 10/4-2020 kl. 22:00. Aflevering skal ske i grupper bestående af 2-3 gruppemedlemmer - I står selv for gruppedannelser.
+Følgende opgaver skal afleveres i Fronter senest tirsdag d. 20/4-2021 kl. 20:00. Aflevering skal ske i grupper bestående af 2-4 gruppemedlemmer - I står selv for gruppedannelser (det er oplagt at bruge studiegrupperne).
 
 Der skal afleveres en zip-fil med scripts og andre nødvendige filer for besvarelsen. Udgangspunktet er, at jeg kan hente zipfilen ned, unzippe den og køre de forskellige scripts og få de rigtige resultater.
 
-I kan dog vedlægge en tekst-fil, som forklarer, hvordan absolutte stier skal sættes op i de forskellige scripts for at virke korrekt.
+I kan dog vedlægge en tekst-fil, som forklarer, hvordan absolutte og relative stier skal sættes op i de forskellige scripts for at virke korrekt.
 
 Der er 5 opgaver, hvoraf opgave 1-4 er obligatoriske, mens opgave 5 er en bonusopgave. 
 --------------------------------------------------------------------------------------
@@ -60,7 +60,7 @@ Min linje 1
 Min linje 2
 
 ------------------
-IKKE obligatorisk
+IKKE obligatorisk (men en meget spændende opgave)
 
 5) Skriv et script (fx my_tree.sh), der tager 2 argumenter, a og b, og opretter et mappehieraki
  Hvor a angiver antal niveauer, og b angiver antallet af undermapper i hvert niveau.
@@ -69,3 +69,5 @@ Kommandoen bash my_tree.sh 3 2 opretter 3 mapper med 2 undermapper i hver.
 
 Man kan også lave scriptet, sådan så det beder om de to argumenter
 efter man har kørt bash my_tree.sh 
+
+(Hint: Det kan hjælpe at først tænke i rekursion og derefter at omdanne løsningsdesignet til en iterativ løsning)
