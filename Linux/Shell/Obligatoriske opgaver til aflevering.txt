@@ -1,8 +1,8 @@
-Følgende opgaver skal afleveres i Fronter senest tirsdag d. 20/4-2021 kl. 20:00. Aflevering skal ske i grupper bestående af 2-4 gruppemedlemmer - I står selv for gruppedannelser (det er oplagt at bruge studiegrupperne).
+Følgende opgaver skal afleveres i Fronter senest tirsdag d. 14/9-2021 kl. 20:00. Aflevering skal ske i grupper bestående af 3-4 gruppemedlemmer - I står selv for gruppedannelser (det er oplagt at bruge studiegrupperne).
 
 Der skal afleveres en zip-fil med scripts og andre nødvendige filer for besvarelsen. Udgangspunktet er, at jeg kan hente zipfilen ned, unzippe den og køre de forskellige scripts og få de rigtige resultater.
 
-I kan dog vedlægge en tekst-fil, som forklarer, hvordan absolutte og relative stier skal sættes op i de forskellige scripts for at virke korrekt.
+I skal vedlægge en tekst-fil, som forklarer, hvordan absolutte og relative stier skal sættes op i de forskellige scripts for at virke korrekt.
 
 Der er 5 opgaver, hvoraf opgave 1-4 er obligatoriske, mens opgave 5 er en bonusopgave. 
 --------------------------------------------------------------------------------------
