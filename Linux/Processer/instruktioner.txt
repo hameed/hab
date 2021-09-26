@@ -1,0 +1,6 @@
+Opgaven laves i en prompt.
+
+1) Hent filen instructions.tar.gz ned på din maskine.
+2) Find ud af, hvordan man udbakker filen via CLI.
+3) Følg instruktionerne i filen.
+4) Giv mig lige en heads up :)
